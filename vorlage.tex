@@ -1,0 +1,172 @@
+
+\documentclass[
+a4paper,						
+12pt,]
+
+{scrartcl}
+
+
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+\setlength{\emergencystretch}{0,5em}
+
+\usepackage{lmodern} 
+
+\usepackage{graphicx} 
+
+
+%hab nicht bibtex verwendet sondern biber, da kann man die Quellen als Footnote anzeigen
+
+\usepackage[backend=biber,style=footnote-dw,series=afteryear,nopublisher=false,terselos=false,shortjournal=true]{biblatex}
+
+\usepackage[babel,german=guillemets]{csquotes} 
+
+
+
+\bibliography{../Quellen}
+
+
+\usepackage{multirow}
+
+\usepackage{url}
+
+\usepackage{float}
+
+
+\addbibresource{../Quellen}
+
+
+\usepackage{setspace}
+
+
+
+
+\begin{document}
+
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{2mm}
+
+
+
+
+
+
+\subject{REFERAT X\\ \ \\im Rahmen der Lehrveranstaltung\\Marketing\\327.101\\Sommersemester 2013}
+\title{}
+\author{eingereicht bei\\Mag. Dr. Klaus Weikhard\\Institut für Marketing\\Karl-Franzens-Universität Graz\\ \ \\ eingereicht von\\Gruppe \\Max Mustermann Matr-Nr.: xxxxxxx\\Moritz Mustermann Matr-Nr.: xxxxxxx\\ \ \\}
+
+
+
+\date{Graz, April 2013}							
+
+
+
+
+
+\maketitle\thispagestyle{empty}						
+
+\newpage
+\thispagestyle{empty}
+\vspace*{2.2 cm}
+\Large
+\noindent
+{\bf Ehrenwörtliche Erklärung} \\
+\vspace*{0.3 cm}
+
+\normalsize
+	
+	 \noindent
+
+Ich erkläre ehrenwörtlich, dass ich die vorliegende Arbeit selbstständig und ohne fremde Hilfe verfasst, andere als die angegebenen Quellen nicht benutzt und die den Quellen wörtlich oder inhaltlich entnommenen Stellen als solche kenntlich gemacht habe. Die Arbeit wurde bisher in gleicher oder ähnlicher Form keiner anderen inländischen oder ausländischen Prüfungsbehörde vorgelegt und auch noch nicht veröffentlicht. Die vorliegende Fassung entspricht der eingereichten elektronischen Version.
+
+
+\vspace{50mm}
+		
+	
+	 \noindent (Ort, Datum) \hfill \hfill	(Unterschrift)
+
+
+\pagebreak
+\tableofcontents			
+\listoffigures				
+
+\pagebreak
+
+
+%hab beim Abkürzungsverzeichnis ein wenig geschummelt, und habs händisch alphabetisch sortiert
+
+\section*{Abkürzungsverzeichnis}
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{3cm}p{7cm}}
+{\bfseries BCG}\dotfill					&		{Boston Consulting Gourp}\\
+{\bfseries DL}\dotfill					&		{Dienstleistung}\\
+{\bfseries ebd.}\dotfill				&		{Ebenda}\\
+{\bfseries o. J.}\dotfill				&		{ohne Jahrgang}\\
+{\bfseries o. O.}\dotfill				&		{ohne Ort}\\
+{\bfseries o. V.}\dotfill				&		{ohne Verfasser}\\
+{\bfseries PIMS}\dotfill				&		{Profit Impact of Market Stratagies}\\
+{\bfseries ROI}\dotfill					&		{Return on Investment}\\
+{\bfseries SGE}\dotfill					&		{Strategische Geschäftseinheit}\\
+{\bfseries u. a.}\dotfill				&		{und andere}\\
+{\bfseries URL}\dotfill					&		{Uniform Resource Locator}\\
+{\bfseries Vgl.}\dotfill				&		{Vergleich}\\
+{\bfseries wie Anm.}\dotfill		&		{wie Anmerkung}
+\end{tabular}
+
+\pagebreak
+
+\onehalfspacing
+
+
+%hab so zitiert, das funktioniert eigentlich ganz gut
+
+\cite[Vgl.][248]{marketingmeffert}
+
+
+%des sind die Tabellen, nicht die schönsten aber sie sind ganz OK
+\begin{center}
+	\begin{tabular}{ p{6cm} | p{6cm} }
+	\multicolumn{1}{c}{\bfseries Chancen }
+ & \multicolumn{1}{c}{\bfseries Risiken} \\
+
+	\hline
+	\begin{itemize}
+	\item 
+	\end{itemize}
+	
+															& \begin{itemize}
+																	\item 
+																	\item 
+																	\item 
+																	\item 
+																	\end{itemize} \\
+	\end{tabular}
+\end{center}
+
+
+
+
+%einfügen eines Bildes, hab da gleich direkt darunter mit \tiny die Quelle hinzugefügt.
+
+	\begin{figure} [h]
+		\label{fig:Kundenportfolio}
+		\centering
+		\includegraphics[width=15cm]{Kundenportfolio.png}
+		\caption[Kundenportfolio]{Kundenportfolio, mit beispielhaft zugeordneten Kunden \\ \tiny{(Quelle: Meffert H./Bruhn C. (2012): Dienstleistungsmarketing, 7. Auflage, Wiesbaden, S. 127)}}
+	\end{figure}
+
+
+%\pagebreak
+
+\printbibliography
+
+	
+
+\end{document}
+
+
+
